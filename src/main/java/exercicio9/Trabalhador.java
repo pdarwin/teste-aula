@@ -4,9 +4,9 @@ package exercicio9;
 
 public class Trabalhador {
 	
-	String nome;
-	int idade;
-	double salario;
+	private String nome;
+	private int idade;
+	private double salario;
 	
 	public Trabalhador (String aNome, double aSalario) {
 		nome = aNome;
