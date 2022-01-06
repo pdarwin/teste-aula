@@ -21,7 +21,7 @@ public class CriaTrabalhador {
 		System.out.println("Média: " + mediaSalarios (trabalhadores));
 		System.out.println("Máximo: " + maxSalarios (trabalhadores));
 		System.out.println("Mínimo: " + minSalarios (trabalhadores));
-		System.out.println("Média via stream: " + medStrSalarios (trabalhadores).getAsDouble());
+		System.out.println("Média via stream: " + medStrSalarios (trabalhadores));
 		
 		
     }
@@ -53,8 +53,8 @@ public class CriaTrabalhador {
 		return min;	
 	}
 	
-	public static OptionalDouble medStrSalarios (List<Trabalhador> aTrabalhadores) {
-		return aTrabalhadores.stream().mapToDouble(trabalhador -> trabalhador.getSalario()).average();
+	public static double medStrSalarios (List<Trabalhador> aTrabalhadores) {
+		return aTrabalhadores.stream().mapToDouble(trabalhador -> trabalhador.getSalario()).average().getAsDouble();
 	}
 	
 	
