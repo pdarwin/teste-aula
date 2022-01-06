@@ -1,7 +1,7 @@
 package exercicio9;
 import java.util.ArrayList;
 import java.util.List;
-//Exercício 9
+import java.util.OptionalDouble;
 
 
 public class CriaTrabalhador {
@@ -20,6 +20,10 @@ public class CriaTrabalhador {
 		System.out.println("Soma: " + somaSalarios (trabalhadores));
 		System.out.println("Média: " + mediaSalarios (trabalhadores));
 		System.out.println("Máximo: " + maxSalarios (trabalhadores));
+		System.out.println("Mínimo: " + minSalarios (trabalhadores));
+		System.out.println("Média via stream: " + medStrSalarios (trabalhadores).getAsDouble());
+		
+		
     }
 	
 	public static double somaSalarios (List<Trabalhador> aTrabalhadores) {
@@ -41,4 +45,17 @@ public class CriaTrabalhador {
 		}
 		return max;	
 	}
+	public static double minSalarios (List<Trabalhador> aTrabalhadores) {
+		double min = aTrabalhadores.get(0).getSalario();
+		for (Trabalhador trabalhador : aTrabalhadores) {
+			if (trabalhador.getSalario() < min) min = trabalhador.getSalario();
+		}
+		return min;	
+	}
+	
+	public static OptionalDouble medStrSalarios (List<Trabalhador> aTrabalhadores) {
+		return aTrabalhadores.stream().mapToDouble(trabalhador -> trabalhador.getSalario()).average();
+	}
+	
+	
 }
