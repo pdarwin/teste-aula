@@ -1,32 +1,30 @@
 package exercicioCao;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.OptionalDouble;
-
 
 public class Main {
 	
 	public static void main(String[] args)
     { 
-		/*List<Trabalhador> trabalhadores = new ArrayList<Trabalhador>();
+		List<Cao> caes = new ArrayList<Cao>();
+		List<Gato> gatos = new ArrayList<Gato>();
 		
 		
-		trabalhadores.add (new Trabalhador("João", 30, 1000));
-		trabalhadores.add (new Trabalhador("Pedro", 45, 1500));
-		trabalhadores.add (new Trabalhador("Tiago", 25, 700));
-		trabalhadores.add (new Trabalhador("Ana", 23, 2050));
-		trabalhadores.add (new Trabalhador("Maria", 57, 2000));
+		caes.add (new Cao ("Piloto", 5, 35, "Grand Danois"));
+		caes.add (new Cao ("Farrusco", 12, 2.7, "Pequenois"));
+		
+		gatos.add (new Gato ("Tareco", 5, 4, false));
+		gatos.add (new Gato ("Tigre", 2, 2.5, true));
+		
+		for (Cao cao :caes) System.out.println("Olá! " + cao.comunicar() + " Eu sou o " + cao.getNome()+ ", tenho " + cao.getIdade() + " anos, " + cao.getPeso() +" quilos, e sou um " + cao.getRaca() + "!");
+		for (Gato gato :gatos) System.out.println("Olá! " +  gato.comunicar() + " Eu sou o " + gato.getNome() +", tenho " + gato.getIdade() + " anos, " + gato.getPeso() +" quilos, e sou um" + returnCacador(gato.isCacador()));
+		
+    }
 	
-		
-		System.out.println("Soma: " + somaSalarios (trabalhadores));
-		System.out.println("Média: " + mediaSalarios (trabalhadores));
-		System.out.println("Máximo: " + maxSalarios (trabalhadores));
-		System.out.println("Mínimo: " + minSalarios (trabalhadores));
-		System.out.println("Média via stream: " + medStrSalarios (trabalhadores));
-		
-		*/
-		Cao Maluco = new Cao ("Maluco", 5, 10, "Grand Danois");
-		
-		System.out.println(Maluco.comunicar());
-    }	
+	public static String returnCacador (boolean aCacador)
+	{
+		String sCacador;
+		if (aCacador) sCacador = " excelente caçador!"; else  sCacador = "a desgraça a caçar!";
+		return sCacador;
+	}
 }

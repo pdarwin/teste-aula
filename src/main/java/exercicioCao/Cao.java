@@ -5,11 +5,11 @@ package exercicioCao;
 
 public class Cao extends Animal {
 	
-	private String Raca;
+	private String raca;
 	
-	public Cao(String nome, int idade, double peso, String raca) {
-		super(nome, idade, peso);
-		Raca = raca;
+	public Cao(String aNome, int aIdade, double aPeso, String aRaca) {
+		super(aNome, aIdade, aPeso);
+		raca = aRaca;
 	}
 
 	public String comunicar ()
@@ -18,11 +18,11 @@ public class Cao extends Animal {
 	}
 
 	public String getRaca() {
-		return Raca;
+		return raca;
 	}
 
-	public void setRaca(String raca) {
-		Raca = raca;
+	public void setRaca(String aRaca) {
+		raca = aRaca;
 	}
 
 	
