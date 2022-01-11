@@ -29,8 +29,12 @@ public class Main {
 	
 	public static String returnEsp (Animal aAnimal)
 	{
-		String sEsp;
-		if (aAnimal instanceof Cao) sEsp = ", e sou um " + ((Cao)aAnimal).getRaca(); else if (aAnimal instanceof Gato) sEsp = returnCacador(((Gato)aAnimal).isCacador()); else sEsp = "";
+		String sEsp= "";
+		if (aAnimal instanceof Cao) sEsp = ", e sou um " + ((Cao)aAnimal).getRaca(); 
+		else { 
+			if (aAnimal instanceof Gato) sEsp = returnCacador(((Gato)aAnimal).isCacador()); 
+			//else sEsp = "";
+		}
 		return sEsp;
 	}
 }
