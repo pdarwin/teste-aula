@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 #Genio
-genio/
+src/main/java/genio/
 
 # Package Files #
 *.jar
