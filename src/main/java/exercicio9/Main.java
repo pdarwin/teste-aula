@@ -22,7 +22,6 @@ public class Main {
 		System.out.println("Mínimo: " + minSalarios (trabalhadores));
 		System.out.println("Média via stream: " + medStrSalarios (trabalhadores));
 		
-		
     }
 	
 	public static double somaSalarios (List<Trabalhador> aTrabalhadores) {

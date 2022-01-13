@@ -37,7 +37,7 @@ public class Main {
 	public static String returnEsp (Animal aAnimal)
 	{
 		String sEsp= "";
-		if (aAnimal instanceof Cao) 
+		if (aAnimal instanceof Cao)
 			{
 				sEsp = ", e sou um " + ((Cao)aAnimal).getRaca(); 
 			}
