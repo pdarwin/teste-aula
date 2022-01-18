@@ -2,32 +2,32 @@ package empresa;
 
 public class Divisao {
 	
-	private TipoDivisao tipoDivisao;
-	int m2;
+	private TipoDivisao tipo;
+	double m2;
 	int numJanelas;
 	int numLugaresSentados;
 	
-	public Divisao(TipoDivisao tipoDivisao, int m2, int numJanelas, int numLugaresSentados) {
+	public Divisao(TipoDivisao tipo, double m2, int numJanelas, int numLugaresSentados) {
 		super();
-		this.tipoDivisao = tipoDivisao;
+		this.tipo = tipo;
 		this.m2 = m2;
 		this.numJanelas = numJanelas;
 		this.numLugaresSentados = numLugaresSentados;
 	}
 
 	public TipoDivisao getTipoDivisao() {
-		return tipoDivisao;
+		return tipo;
 	}
 
 	public void setTipoDivisao(TipoDivisao tipoDivisao) {
-		this.tipoDivisao = tipoDivisao;
+		this.tipo = tipoDivisao;
 	}
 
-	public int getM2() {
+	public double getM2() {
 		return m2;
 	}
 
-	public void setM2(int m2) {
+	public void setM2(double m2) {
 		this.m2 = m2;
 	}
 
@@ -46,7 +46,6 @@ public class Divisao {
 	public void setNumLugaresSentados(int numLugaresSentados) {
 		this.numLugaresSentados = numLugaresSentados;
 	}
-	
 	
 	
 }

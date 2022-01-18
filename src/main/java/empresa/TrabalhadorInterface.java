@@ -4,6 +4,6 @@ public interface TrabalhadorInterface {
 
 	public void trabalha ();
 	
-	public void recebeSalario ();
+	public void recebeSalario(double aSalario);
 	
 }

@@ -1,11 +1,9 @@
 package empresa;
 
-public class TipoDivisao {
-
-	private enum tipoDivisao {
+public enum TipoDivisao {
 		WC, 
 		COZINHA,
-		ESCRITORIO
-	}
-	
+		ESCRITORIO,
+		PATIO,
+		QUARTO
 }
