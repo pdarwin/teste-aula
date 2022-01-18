@@ -4,9 +4,8 @@ public class TipoDivisao {
 
 	private enum tipoDivisao {
 		WC, 
-		Cozinha,
-		Escritorio
+		COZINHA,
+		ESCRITORIO
 	}
-	
 	
 }

@@ -2,14 +2,8 @@ package empresa;
 
 public interface TrabalhadorInterface {
 
-	public static void trabalha ()
-	{
-		
-	}
+	public void trabalha ();
 	
-	public static void recebeSalario ()
-	{
-		
-	}
+	public void recebeSalario ();
 	
 }

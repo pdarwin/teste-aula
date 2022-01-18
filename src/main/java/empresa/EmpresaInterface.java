@@ -2,14 +2,12 @@ package empresa;
 
 public interface EmpresaInterface {
 
-	public static void pagaTrabalhador ()
-	{
-		
-	}
+	public void pagaTrabalhador ();
 	
-	public static void recebeClientes ()
-	{
-		
-	}
+	public void cobraClientes ();
+	
+	public void getNumFuncionarios ();
+
+	public void getNumLugaresSentados ();
 	
 }
