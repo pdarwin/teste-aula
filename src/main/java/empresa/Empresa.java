@@ -46,7 +46,8 @@ public class Empresa implements EmpresaInterface {
 		}
 		else
 		{	
-			System.out.print("Não há dinheiro em caixa sificiente para pagar aos trabalhadores");
+			System.out.println("Não há dinheiro em caixa suficiente para pagar aos trabalhadores!\nOs safados estão a rapar " + 
+					total + " € cada mês.\n\nPrima 1 para extorquir dinheiro a um cliente\nPrima 2 para despedir trabalhadores\nPrima 3 para iniciar processo de falência");
 		}
 		
 	}
@@ -74,6 +75,12 @@ public class Empresa implements EmpresaInterface {
 			nLugares += divisao.getNumLugaresSentados();
 		}
 		return nLugares;
+	}
+	
+	@Override
+	public void addTrabalhador(Trabalhador aTrabalhador) {
+		// TODO Auto-generated method stub
+		listaTrabalhadores.add(aTrabalhador);
 	}
 
 	public String getNome() {

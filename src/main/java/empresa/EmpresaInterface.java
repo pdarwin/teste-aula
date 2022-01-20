@@ -9,5 +9,7 @@ public interface EmpresaInterface {
 	public int getNumTrabalhadores ();
 
 	public int getNumLugaresSentados ();
+
+	public void addTrabalhador(Trabalhador aTrabalhador);
 	
 }

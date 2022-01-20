@@ -50,7 +50,7 @@ public class Trabalhador implements TrabalhadorInterface {
 	@Override
 	public void trabalha() {
 		// TODO Auto-generated method stub
-		System.out.print("O " + nome + "está a trabalhar.");
+		System.out.println("Trabalhador " + nome + " está a trabalhar.");
 	}
 
 	@Override
