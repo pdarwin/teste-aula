@@ -51,16 +51,21 @@ public class Trabalhador implements TrabalhadorInterface {
 	public void trabalha() {
 		// TODO Auto-generated method stub
 		System.out.print("O " + nome + "está a trabalhar.");
-		
 	}
 
 	@Override
 	public void recebeSalario(double aSalario) {
 		// TODO Auto-generated method stub
-		carteira+= aSalario;
+		carteira += aSalario;
 		
 	}
 	
+	@Override
+	public void recebeSalario() {
+		// TODO Auto-generated method stub
+		carteira += salario;
+		
+	}
 	
 	
 }

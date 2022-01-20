@@ -2,12 +2,12 @@ package empresa;
 
 public interface EmpresaInterface {
 
-	public void pagaTrabalhador ();
+	public void pagaTrabalhadores ();
 	
-	public void cobraClientes ();
+	public void cobraClientes (double aValor);
 	
-	public void getNumFuncionarios ();
+	public int getNumTrabalhadores ();
 
-	public void getNumLugaresSentados ();
+	public int getNumLugaresSentados ();
 	
 }
