@@ -1,6 +1,5 @@
 package empresa;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -21,14 +20,64 @@ public class Main {
 		divisoes.add(sala);
 		divisoes.add(gabinete);
 		divisoes.add(cozinha);
+	
+		Scanner sc= new Scanner(System.in);
 		
-		Empresa pastelaria = new Empresa("Casa dos Bolos", 7000, "Rua das Flores", 101999101, divisoes);
+		boolean correto = false;
+		
+		while (!correto)
+		{
+			
+			try {
+				System.out.println("Introduza um número:");
+				int num = sc.nextInt();
+				
+				if (num > 10)
+				{
+					System.out.println("ok");
+				}
+				else {
+					throw new SemNumeroException();
+				}
+				
+				System.out.println( (float) 1 / num);
+				correto= true;
+				
+			} catch (ArithmeticException e) {
+				// TODO: handle exceptio
+				printaErro(e);
+			}
+			catch (SemNumeroException e)
+			{
+				printaErro(e);
+			}
+			catch (Exception e) {
+				// TODO: handle exceptio
+				printaErro(e);
+				sc.next();
+			}
+			finally {
+				try {
+					String frase = "AA";
+					
+					System.out.println( frase.substring(5));	
+				} catch (Exception e) {
+					// TODO: handle exception
+					printaErro(e);
+				}
+			}
+		}
+		System.out.println();
+		
+		Empresa pastelaria = new Empresa("Casa dos Bolos", 30000, "Rua das Flores", 101999101, divisoes);
 		
 		Trabalhador t0 = new Trabalhador("José Ramiro", 50, 1050, 0);
 		Trabalhador t1 = new Trabalhador("Clara de Sousa", 45, 2050, 0);
+		Chefe chefe = new Chefe("Joaquim", 53, 2000, 0); 
 	
 		pastelaria.addTrabalhador(t0);
 		pastelaria.addTrabalhador(t1);
+		pastelaria.addTrabalhador(chefe);
 
 		for (Trabalhador trabalhador : pastelaria.getListaTrabalhadores())
 		{
@@ -38,8 +87,6 @@ public class Main {
 		System.out.println();
 		System.out.println("Prima 1 para processar salários\nPrima 0 para sair");
 		
-		
-		Scanner sc= new Scanner(System.in);
 		int opcao = sc.nextInt();
 		while (opcao == 1)
 		{
@@ -48,7 +95,12 @@ public class Main {
 			System.out.println("Bem vindo ao programa de salários da empresa " +  pastelaria.getNome());
 			System.out.println ();
 			
-			pastelaria.pagaTrabalhadores();
+			
+			if (chefe.isPaga())
+			{			
+				System.out.println ("Está com sorte, o chefe " + chefe.getNome() + " mandou pagar.");
+				pastelaria.pagaTrabalhadores();
+			}
 			
 			System.out.println ();
 			
@@ -75,6 +127,12 @@ public class Main {
 		for( int i = 0; i < 25; i++ ) {
 			System.out.println("");
 			}
+
+	}
+	
+	public static void printaErro(Exception e) {  
+
+		System.out.println("Erro: " + e.toString());
 
 	}
 
