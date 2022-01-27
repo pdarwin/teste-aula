@@ -1,8 +1,5 @@
 package exercicioCao;
 
-//Exercício 9
-//import java.util.Scanner;
-
 public class Gato extends Animal {
 	
 	private boolean cacador;

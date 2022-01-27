@@ -1,6 +1,6 @@
 package empresa;
 
-public class SemNumeroException extends Exception {
+public class NumException extends Exception {
 
 	/**
 	 * 

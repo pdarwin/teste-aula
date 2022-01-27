@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Divisao wc = new Divisao(TipoDivisao.WC,10, 1, 2);
 		Divisao sala = new Divisao(TipoDivisao.QUARTO,40, 5, 20);
@@ -23,50 +22,25 @@ public class Main {
 	
 		Scanner sc= new Scanner(System.in);
 		
-		boolean correto = false;
-		
-		while (!correto)
-		{
-			
-			try {
-				System.out.println("Introduza um número:");
-				int num = sc.nextInt();
-				
-				if (num > 10)
-				{
-					System.out.println("ok");
-				}
-				else {
-					throw new SemNumeroException();
-				}
-				
-				System.out.println( (float) 1 / num);
-				correto= true;
-				
-			} catch (ArithmeticException e) {
-				// TODO: handle exceptio
-				printaErro(e);
-			}
-			catch (SemNumeroException e)
-			{
-				printaErro(e);
-			}
-			catch (Exception e) {
-				// TODO: handle exceptio
-				printaErro(e);
-				sc.next();
-			}
-			finally {
-				try {
-					String frase = "AA";
-					
-					System.out.println( frase.substring(5));	
-				} catch (Exception e) {
-					// TODO: handle exception
-					printaErro(e);
-				}
-			}
-		}
+		/* boolean correto = false;
+		 * 
+		 * while (!correto) {
+		 * 
+		 * try { System.out.println("Introduza um número:"); int num = sc.nextInt();
+		 * 
+		 * if (num > 10) { System.out.println("ok"); } else { throw new NumException();
+		 * }
+		 * 
+		 * System.out.println( (float) 1 / num); correto= true;
+		 * 
+		 * } catch (ArithmeticException e) { // TODO: handle exceptio printaErro(e); }
+		 * catch (NumException e) { printaErro(e); } catch (Exception e) { // TODO:
+		 * handle exceptio printaErro(e); sc.next(); } finally { try { String frase =
+		 * "AA";
+		 * 
+		 * System.out.println( frase.substring(5)); } catch (Exception e) { // TODO:
+		 * handle exception printaErro(e); } } }
+		 */
 		System.out.println();
 		
 		Empresa pastelaria = new Empresa("Casa dos Bolos", 30000, "Rua das Flores", 101999101, divisoes);

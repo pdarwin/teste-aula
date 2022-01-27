@@ -1,8 +1,5 @@
 package exercicioCao;
 
-//Exercício 9
-//import java.util.Scanner;
-
 public class Cao extends Animal {
 	
 	private String raca;
