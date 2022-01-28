@@ -3,7 +3,7 @@ package teste2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Empresa {
+public class Empresa implements EmpresaInterface {
 
 	private String nome;
 	private List<Reboque> reboques = new ArrayList<Reboque>();
