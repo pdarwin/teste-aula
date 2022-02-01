@@ -1,6 +1,6 @@
 package teste2;
 
-public interface EmpresaInterface {
+public interface IEmpresa {
 
 	public int getNumReboques ();
 

@@ -32,14 +32,14 @@ public class Carro extends Reboque {
 		this.pesoMaxReb = aPesoMaxReb;
 	}
 
-	public void Trabalhar() {
+	public void trabalhar() {
 		// TODO Auto-generated method stub
-		super.Trabalhar();
+		super.trabalhar();
 	}
 
-	public void Avariar() {
+	public void avariar() {
 		// TODO Auto-generated method stub
-		super.Avariar();
+		super.avariar();
 	}
 
 }

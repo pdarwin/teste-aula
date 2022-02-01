@@ -32,7 +32,7 @@ public class Main {
 		
 		for (Reboque reboque:empresa.getReboques())
 		{
-			reboque.Trabalhar();
+			reboque.trabalhar();
 		}
 		
 		empresa.getReboques().get(2).setAvariado(true);
@@ -43,7 +43,7 @@ public class Main {
 		System.out.println();
 		for (Reboque reboque:empresa.getReboques())
 		{
-			reboque.Trabalhar();
+			reboque.trabalhar();
 		}
 		
 		System.out.println();

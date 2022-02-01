@@ -36,7 +36,7 @@ public abstract class Reboque {
 	}
 
 
-	public void Trabalhar ()
+	public void trabalhar ()
 	{
 		String tipoReboque = "";
 		
@@ -61,7 +61,7 @@ public abstract class Reboque {
 		
 	}
 	
-	public void Avariar ()
+	public void avariar ()
 	{
 		avariado = true;
 	}

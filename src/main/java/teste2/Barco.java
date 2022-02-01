@@ -33,13 +33,13 @@ public class Barco extends Reboque {
 	}
 
 	@Override
-	public void Trabalhar() {
-		super.Trabalhar();
+	public void trabalhar() {
+		super.trabalhar();
 	}
 
 	@Override
-	public void Avariar() {
-		super.Avariar();
+	public void avariar() {
+		super.avariar();
 	}
 
 }
