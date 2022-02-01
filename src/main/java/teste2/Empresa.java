@@ -13,22 +13,6 @@ public class Empresa implements IEmpresa {
 		this.nome = aNome;
 	}
 	
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String aNome) {
-		this.nome = aNome;
-	}
-
-	public List<Reboque> getReboques() {
-		return reboques;
-	}
-
-	public void setReboques(List<Reboque> aReboques) {
-		this.reboques = aReboques;
-	}
-
 	public int getNumReboques ()
 	{
 		return reboques.size();
@@ -46,6 +30,21 @@ public class Empresa implements IEmpresa {
 		}
 		return n;
 	}
+	
+	public String getNome() {
+		return nome;
+	}
 
+	public void setNome(String aNome) {
+		this.nome = aNome;
+	}
+
+	public List<Reboque> getReboques() {
+		return reboques;
+	}
+
+	public void setReboques(List<Reboque> aReboques) {
+		this.reboques = aReboques;
+	}
 	
 }

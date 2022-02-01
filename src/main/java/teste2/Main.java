@@ -38,7 +38,7 @@ public class Main {
 		empresa.getReboques().get(2).setAvariado(true);
 		
 		System.out.println();
-		System.out.println("O reboque " + String.format("%03d", empresa.getReboques().get(2).numTransporte) + " avariou.");
+		System.out.println("O reboque " + String.format("%03d", empresa.getReboques().get(2).getNumTransporte()) + " avariou.");
 		
 		System.out.println();
 		for (Reboque reboque:empresa.getReboques())
@@ -51,7 +51,7 @@ public class Main {
 		
 		for (Reboque reboque:empresa.getReboques())
 		{
-			System.out.println("O reboque " + String.format("%03d", reboque.numTransporte) + " efetuou " + reboque.numServicos + " serviços.");
+			System.out.println("O reboque " + String.format("%03d", reboque.getNumTransporte()) + " efetuou " + reboque.getNumTransporte() + " serviços.");
 		}
 		
 	}

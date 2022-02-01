@@ -2,40 +2,17 @@ package teste2;
 
 public abstract class Reboque {
 	
-	int numTransporte;
-	int numServicos;
-	boolean avariado;
+	private int numTransporte;
+	private int numServicos;
+	private boolean avariado;
 	
 	public Reboque(int aNumTransporte) {
 		super();
 		this.numTransporte = aNumTransporte;
 		this.numServicos = 0;
+		this.avariado = false;
 	}
 		
-	
-	public int getNumTransporte() {
-		return numTransporte;
-	}
-
-
-
-	public void setNumTransporte(int aNumTransporte) {
-		this.numTransporte = aNumTransporte;
-	}
-
-
-
-	public int getNumServicos() {
-		return numServicos;
-	}
-
-
-
-	public void setNumServicos(int aNumServicos) {
-		this.numServicos = aNumServicos;
-	}
-
-
 	public void trabalhar ()
 	{
 		String tipoReboque = "";
@@ -65,6 +42,29 @@ public abstract class Reboque {
 	{
 		avariado = true;
 	}
+	
+	public int getNumTransporte() {
+		return numTransporte;
+	}
+
+
+
+	public void setNumTransporte(int aNumTransporte) {
+		this.numTransporte = aNumTransporte;
+	}
+
+
+
+	public int getNumServicos() {
+		return numServicos;
+	}
+
+
+
+	public void setNumServicos(int aNumServicos) {
+		this.numServicos = aNumServicos;
+	}
+
 	
 	public boolean isAvariado() {
 		return avariado;
